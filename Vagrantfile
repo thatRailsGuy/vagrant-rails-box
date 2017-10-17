@@ -8,5 +8,5 @@ Vagrant.configure("2") do |config|
     end
     config.vm.provision :shell, path: "provision/install-rvm.sh", args: "stable", privileged: false
     config.vm.provision :shell, path: "provision/install-ruby.sh", args: "2.4.1 rails haml", privileged: false
-    config.vm.provision :shell, path: "provision/setup.sh", privileged: false
+    # config.vm.provision :shell, path: "provision/setup.sh", privileged: false
 end
